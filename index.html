@@ -22,12 +22,12 @@
 
             // The data for our dataset
             data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'], //x_axis
                 datasets: [{
                     label: 'My First dataset',
                     backgroundColor: 'rgb(255, 99, 132)',
                     borderColor: 'rgb(255, 99, 132)',
-                    data: [0, 10, 5, 2, 20, 30, 45]
+                    data: [0, 10, 5, 2, 20, 30, 45] //y_axis
                 }]
             },
 
@@ -35,5 +35,14 @@
             options: {}
         });
     </script>
+
+    <div class = "form">
+        <script src = "Equation.js"></script>
+        <form name="EqnInput" action="" onsubmit="Compute()" >
+            <label for="eqn">Enter your Equation here: <br> i.e. y=m*x+c </label><br><br>
+            <input type="text" id="eqn" name="eqn"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
