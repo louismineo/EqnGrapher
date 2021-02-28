@@ -4,45 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script> </script>  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>EqnGrapher</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Document</title>
 </head>
 <body>
-    <div class = "container">
-        <canvas id="myChart"></canvas>
-    </div>
-
-
-    <script>
-        var ctx = document.getElementById('myChart').getContext('2d');
-        var chart = new Chart(ctx, {
-            // The type of chart we want to create
-            type: 'line',
-
-            // The data for our dataset
-            data: {
-                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'], //x_axis
-                datasets: [{
-                    label: 'My First dataset',
-                    backgroundColor: 'rgb(255, 99, 132)',
-                    borderColor: 'rgb(255, 99, 132)',
-                    data: [0, 10, 5, 2, 20, 30, 45] //y_axis
-                }]
-            },
-
-            // Configuration options go here
-            options: {}
-        });
-    </script>
-
-    <div class = "form">
-        <script src = "Equation.js"></script>
-        <form name="EqnInput" action="" onsubmit="Compute()" >
-            <label for="eqn">Enter your Equation here: <br> i.e. y=m*x+c </label><br><br>
-            <input type="text" id="eqn" name="eqn"><br><br>
-            <input type="submit" value="Submit">
-        </form>
+    <div id="graph" style="width:1000px;height:750px;">
+        <script type="text/javascript" src= "attempt2.js"></script> <!--load data first-->
+        <script type="text/javascript" src= "graph.js"></script>
     </div>
 </body>
 </html>
