@@ -8,9 +8,15 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="graph" style="width:1000px;height:750px;">
+    <div id="graph" style="width:1000px;height:650px;">
         <script type="text/javascript" src= "attempt2.js"></script> <!--load data first-->
         <script type="text/javascript" src= "graph.js"></script>
     </div>
+
+    <form name="EqnInput" action="" onsubmit="Compute()">
+        <label for="eqn">Enter your Equation here: <br> i.e. y=m*x+c </label><br><br>
+        <input type="text" id="eqn" name="eqn"><br><br>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
